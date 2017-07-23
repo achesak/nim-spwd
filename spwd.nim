@@ -9,9 +9,7 @@ import times
 
 
 type
-    Spwd* = ref SpwdInternal
-    
-    SpwdInternal* = object
+    Spwd* = ref object
         sp_nam : string
         sp_pwd : string
         sp_lstchg : int
@@ -23,9 +21,7 @@ type
         sp_flag : string
 
 type
-    Spwd2* = ref Spwd2Internal
-    
-    Spwd2Internal* = object
+    Spwd2* = ref object
         sp_nam : string
         sp_pwd : string
         sp_lstchg : Time
